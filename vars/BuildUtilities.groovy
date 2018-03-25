@@ -56,6 +56,7 @@ void createMetadata(script, String buildNumber) {
 }
 
 void createMetadata(script) {
+/*
   String buildVersion = createBuildVersion()
   writeBuildVersion(buildVersion)
 
@@ -64,6 +65,8 @@ void createMetadata(script) {
 
   String buildProperties = sh(returnStdout: true, script: 'env').trim()
   writeBuildProperties(buildProperties)
+  */
+  echo "Create meta data success!"
 }
 
 
