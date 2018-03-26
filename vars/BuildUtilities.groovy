@@ -56,16 +56,16 @@ void createMetadata(script, String buildNumber) {
 }
 
 void createMetadata(script) {
-/*
+
   String buildVersion = createBuildVersion()
-  writeBuildVersion(buildVersion)
+  //writeBuildVersion(buildVersion)
 
-  String buildRevision = createBuildRevision()
-  writeBuildRevision(buildRevision)
+  //String buildRevision = createBuildRevision()
+  //writeBuildRevision(buildRevision)
 
-  String buildProperties = sh(returnStdout: true, script: 'env').trim()
-  writeBuildProperties(buildProperties)
-  */
+  //String buildProperties = sh(returnStdout: true, script: 'env').trim()
+  //writeBuildProperties(buildProperties)
+ 
   echo "Create meta data success!"
 }
 
@@ -115,8 +115,9 @@ String readBuildDistributionArtifactId() {
 
 String readBuildDistributionVersion() {
   // get pom.xml <version> value
-  String version = sh(returnStdout: true, script: 'mvn -q -Dexec.executable="echo" -Dexec.args=\'${project.version}\' --non-recursive exec:exec').trim()
-  echo "distribution version = ${version}"
+  //String version = sh(returnStdout: true, script: 'mvn -q -Dexec.executable="echo" -Dexec.args=\'${project.version}\' --non-recursive exec:exec').trim()
+  //echo "distribution version = ${version}"
+  String version = "Nguyen Minh Anh"
   return version
 }
 
