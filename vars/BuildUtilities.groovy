@@ -117,7 +117,7 @@ String readBuildDistributionVersion() {
   // get pom.xml <version> value
   //String version = sh(returnStdout: true, script: 'mvn -q -Dexec.executable="echo" -Dexec.args=\'${project.version}\' --non-recursive exec:exec').trim()
   String version = "Nguyen Minh Anh"
-  sh "mkdir -p output"
+  //sh "mkdir -p output"
   echo "distribution version = ${version}"
   return version
 }
