@@ -115,9 +115,9 @@ String readBuildDistributionArtifactId() {
 
 String readBuildDistributionVersion() {
   // get pom.xml <version> value
-  //String version = sh(returnStdout: true, script: 'mvn -q -Dexec.executable="echo" -Dexec.args=\'${project.version}\' --non-recursive exec:exec').trim()
-  //echo "distribution version = ${version}"
   String version = "Nguyen Minh Anh"
+  //String version = sh(returnStdout: true, script: 'mvn -q -Dexec.executable="echo" -Dexec.args=\'${project.version}\' --non-recursive exec:exec').trim()
+  echo "distribution version = ${version}"
   return version
 }
 
